@@ -3,8 +3,8 @@
 	padding: calcRem(15) calcRem(30);
     line-height: 1;
     border-radius: 50px;
-    font-size: calcRem(18);
-
+    font-size: calcRem(14);
+    font-family: $almarai-bold;
 	&.btn-primary {
 		background-color: $brand-color;
         border-color: #e3b472;
