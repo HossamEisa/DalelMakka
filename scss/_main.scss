@@ -1,0 +1,34 @@
+@charset 'UTF-8';
+//Helper 
+@import "helper/_directions";
+
+// 1. Configuration and helpers
+@import 'abstracts/functions',
+'abstracts/mixins';
+
+// 2. Vendors
+@import 'vendors/animate';
+
+
+
+// 3. Base stuff
+@import 'base/rest',
+'base/normalize',
+'base/base',
+'base/fonts',
+'base/helpers';
+
+
+// 4. Components
+@import 'components/button',
+'components/scroll-to-top',
+'components/form.scss';
+
+// 5. Layout-related sections 
+@import 'layout/header',
+'layout/footer',
+'layout/layout';
+
+
+
+// 6. Page-specific styles

@@ -1,0 +1,23 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+@font-face {
+    font-family: 'Almarai-Regular';
+    src: url("../fonts/Almarai-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Almarai-Light';
+    src: url("../fonts/Almarai-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Almarai-Bold';
+    src: url("../fonts/Almarai-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Almarai-ExtraBold';
+    src: url("../fonts/Almarai-ExtraBold.ttf") format("truetype");
+}
