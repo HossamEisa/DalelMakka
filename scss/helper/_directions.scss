@@ -1,4 +1,4 @@
-$direction: rtl !default;
+$direction: ltr !default;
 
 /**
  * Flips any values
@@ -12,8 +12,8 @@ $direction: rtl !default;
 /**
  * Flips left for right, right for left
  */
-$left: flip(left, right);
-$right: flip(right, left);
+$left: flip(right, left);
+$right: flip(left, right);
 /**
  * Flips ltr for rtl, rtl for ltr
  */

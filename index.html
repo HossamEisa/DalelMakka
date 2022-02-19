@@ -1,24 +1,57 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 
 <head>
     <title>DalelMakka</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='css/aos.css' media="all" rel='stylesheet' type='text/css'>
     <link href='css/bootstrap.min.css' media="all" rel='stylesheet' type='text/css'>
-    <link href='css/style-rtl.min.css' media="all" rel='stylesheet' type='text/css'>
+    <link href='css/style.min.css' media="all" rel='stylesheet' type='text/css'>
 
 </head>
 
 <body id="body">
+    <!-- Loader -->
+    <div class="loader">
+        <img src="../DalelMakka/img/Frame.png">
+        <svg version="1.1" id="L4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            y="0px" width="60" enable-background="new 0 0 0 0" xml:space="preserve">
+            <circle fill="#fff" stroke="none" cx="6" cy="50" r="6">
+                <animate attributeName="opacity" dur="1s" values="0;1;0" repeatCount="indefinite" begin="0.1" />
+            </circle>
+            <circle fill="#fff" stroke="none" cx="26" cy="50" r="6">
+                <animate attributeName="opacity" dur="1s" values="0;1;0" repeatCount="indefinite" begin="0.2" />
+            </circle>
+            <circle fill="#fff" stroke="none" cx="46" cy="50" r="6">
+                <animate attributeName="opacity" dur="1s" values="0;1;0" repeatCount="indefinite" begin="0.3" />
+            </circle>
+        </svg>
+    </div>
+    <!-- /Loader -->
+
+    <header class="header">
+        <div class="row gx-0">
+            <div class="col">
+                <div id="clock"></div>
+            </div>
+            <div class="col-auto"><img alt="" src="./img/right-side.svg"></div>
+        </div>
+    </header>
     <div class="mobile-wrapper">
-        <div class="splash-logo">
+        <div class="splash-logo" data-aos="zoom-in-up" data-aos-duration="500" data-aos-easing="linear">
             <img src="../DalelMakka/img/Frame.png">
         </div>
     </div>
     <!--Scripts-->
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

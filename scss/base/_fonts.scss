@@ -25,3 +25,39 @@
 .font-b {
     font-family: 'Almarai-Bold';
 }
+.text-xs {
+    font-size: 12px;
+}
+.text-sm {
+    font-size: 14px;
+}
+
+.text-md {
+    font-size: 16px;
+}
+
+.text-lg {
+    font-size: 18px;
+}
+
+.text-xl {
+    font-size: 20px;
+}
+
+.text-xxl {
+    font-size: 22px;
+}
+
+.text-xxxl {
+    font-size: 24px;
+}
+
+// Colors
+.text-color-dark {
+    color: $text-color-dark
+}
+
+// Colors
+.brand-color {
+    color: $brand-color
+}

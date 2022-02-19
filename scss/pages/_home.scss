@@ -1,0 +1,54 @@
+.home {
+    padding-top: 10px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .user-image {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-#{$right}: 10px;
+
+        img {
+            max-width: 100%;
+            object-fit: cover;
+
+        }
+    }
+
+    .user-text {
+        font-size: 16px;
+        font-family: $almarai-bold;
+
+        p {
+            color: $text-color-dark;
+            font-family: $almarai;
+            font-size: 13px;
+        }
+    }
+}
+
+.notification {
+    position: relative;
+
+    .noti-num {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: $brand-color;
+        color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 0;
+        top: 3px;
+        font-size: 11px;
+        font-family: $almarai-bold;
+    }
+}

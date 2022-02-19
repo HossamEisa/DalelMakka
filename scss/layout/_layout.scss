@@ -1,17 +1,64 @@
 .mobile-wrapper {
     max-width: 375px;
-    height: 100vh;
     margin: 0 auto;
     position: relative;
     z-index: 1;
-    background: url('../img/Vector.png');
-    background-repeat: no-repeat;
-    background-position: 0 -10px;
+    padding: 0 20px;
+    overflow: auto;
+    max-height: 100%;
 
     .splash-logo {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 100vh;
+        height: 100%;
     }
+
+    &.with-nav {
+        margin-top: 90px;
+        padding-bottom: 20px;
+    }
+
+    &.with-menu {
+        padding-bottom: 160px;
+        margin-top: 44px;
+    }
+}
+
+.sepretor-title {
+    position: relative;
+    display: flex;
+
+    &::after {
+        flex: 1 0 0%;
+        content: "";
+        height: 1px;
+        background-color: #525252;
+        display: inline-block;
+        margin-#{$left}: 20px;
+        top: 9px;
+        position: relative;
+
+    }
+
+    &::before {
+        flex: 1 0 0%;
+        content: "";
+        height: 1px;
+        background-color: #525252;
+        display: inline-block;
+        margin-#{$right}: 20px;
+        top: 9px;
+        position: relative;
+    }
+}
+
+// fixed-to-bottom
+
+.fixed-to-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 50px;
+    left: 0;
 }

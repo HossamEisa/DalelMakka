@@ -1,34 +1,42 @@
 .btn {
-	white-space: nowrap;
-	padding: calcRem(15) calcRem(30);
+    white-space: nowrap;
+    padding: calcRem(15) calcRem(30);
     line-height: 1;
     border-radius: 50px;
     font-size: calcRem(14);
     font-family: $almarai-bold;
-	&.btn-primary {
-		background-color: $brand-color;
-        border-color: #e3b472;
+    width: 100%;
+    display: block;
+
+    &.btn-primary {
+        background-color: $brand-color;
+        border-color: $brand-color;
         transition: 0.3s ease;
+        color: $white;
+
         &:hover {
             background: transparent;
-            color: $black;
+            color: $white;
         }
     }
+
     &.btn-outline-primary {
         border-color: #e3b472;
         transition: 0.3s ease;
-        color: $black;
+        color: $brand-color;
+
         &:hover {
             background-color: $brand-color;
             color: $white;
         }
     }
-    
+
     &.btn-secondry {
-		background-color: $aqua-color;
+        background-color: $aqua-color;
         border-color: #48bbf5;
         transition: 0.3s ease;
         color: $white;
+
         &:hover {
             background: transparent;
             color: $black;
@@ -39,20 +47,21 @@
 // .btn-primary 
 .btn-primary:not(:disabled):not(.disabled):active,
 .btn-primary:not(:disabled):not(.disabled).active,
-.show > .btn-primary.dropdown-toggle {
-	color: $black;
-	background-color: transparent;
-    border-color: #e3b472;
+.show>.btn-primary.dropdown-toggle {
+    color: $white;
+    background-color: transparent;
+    border-color: $brand-color;
 }
+
 .btn-primary:focus,
 .btn-primary.focus {
-	box-shadow: none;
+    box-shadow: none;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .btn-primary:not(:disabled):not(.disabled).active:focus,
-.show > .btn-primary.dropdown-toggle:focus {
-	box-shadow: none;
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: none;
 
 }
 
@@ -61,19 +70,20 @@
 
 .btn-outline-primary:not(:disabled):not(.disabled):active,
 .btn-outline-primary:not(:disabled):not(.disabled).active,
-.show > .btn-outline-primary.dropdown-toggle {
-	background-color: $brand-color;
+.show>.btn-outline-primary.dropdown-toggle {
+    background-color: $brand-color;
     border-color: #e3b472;
     color: $white;
 }
+
 .btn-outline-primary:focus,
 .btn-outline-primary.focus {
-	box-shadow: none;
+    box-shadow: none;
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus,
 .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
-.show > .btn-outline-primary.dropdown-toggle:focus {
-	box-shadow: none;
+.show>.btn-outline-primary.dropdown-toggle:focus {
+    box-shadow: none;
 
 }

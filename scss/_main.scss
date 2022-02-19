@@ -23,13 +23,17 @@
 @import 'components/button',
 'components/scroll-to-top',
 'components/form.scss',
+'components/loader',
 'components/choeses-lang';
 
 // 5. Layout-related sections 
 @import 'layout/header',
 'layout/footer',
+'layout/navigator',
 'layout/layout';
 
 
 
 // 6. Page-specific styles
+
+@import 'pages/home';

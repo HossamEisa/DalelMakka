@@ -1,13 +1,118 @@
+.form-label {
+    color: #F6F6F6;
+    font-size: calcRem(14);
+}
+
 .form-control {
     height: calc(2.88rem + 2px);
     padding: 0.475rem .75rem;
     border: 1px solid #bcbbbb;
     border-radius: $border-radius;
-    box-shadow: $box-shadow;
-    font-size: calcRem(19);
+    background-color: #121210;
+    color: #9F9F9F;
+    font-size: calcRem(14);
 
     &:focus {
-        border-color: rgba(181, 141, 85, 0.5019607843137255);
-        box-shadow: 0 0 0 0.2rem rgb(216, 200, 179)
+        border-color: $brand-color;
+        box-shadow: 0 0 0 0.2rem $brand-color;
+        background-color: #121210;
+        color: #9F9F9F;
+    }
+
+}
+
+// custom-input-with-select
+
+.custom-input-with-select {
+    position: relative;
+
+    input {
+        padding-right: 75px;
+    }
+
+    select {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 70px;
+        border: none;
+        background: transparent;
+        -webkit-appearance: auto;
+        -moz-appearance: auto;
+        appearance: auto;
+        text-align: right;
+        padding-right: 0px;
+        margin-right: 10px;
+        color: $white;
+
+        option {
+            color: $black;
+        }
+
+        &:focus {
+            border-color: none;
+            box-shadow: none;
+            background-color: transparent;
+            color: $white;
+        }
+
+    }
+}
+
+// custom-input-password-show
+
+.custom-input-password-show {
+
+    position: relative;
+
+    .show-pw-icon {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        padding: 10px;
+
+        &.active {
+            &::after {
+                position: absolute;
+                content: "/";
+                right: 15px;
+                top: 10px;
+                font-size: 19px;
+                color: #9F9F9F;
+            }
+        }
+    }
+}
+
+// OTP Design
+.otp-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    input {
+        height: 50px;
+        background-color: transparent;
+        border: 1px solid $brand-color;
+        border-radius: 10px;
+        width: 74px;
+        color: $brand-color;
+        font-size: 18px;
+        font-family: $almarai-bold;
+        text-align: center;
+        margin: 0 7px;
+
+        &:focus {
+            border-color: $brand-color;
+            box-shadow: 0 0 0 0.2rem $brand-color;
+            background-color: #121210;
+            color: #9F9F9F;
+            outline: none;
+        }
+    }
+
+    [placeholder]:focus::-webkit-input-placeholder {
+        transition: opacity 0.5s 0.0s ease;
+        opacity: 0;
     }
 }

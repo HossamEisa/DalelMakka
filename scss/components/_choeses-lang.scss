@@ -1,5 +1,4 @@
 .select-lang-form {
-    padding: calcRem(20);
     padding-top: 146px;
 
     .m-title {
@@ -11,7 +10,7 @@
     }
 
     .custom-radio-check {
-        margin-bottom: 30px;
+        margin-bottom: 15px;
 
         &:last-child {
             margin-bottom: 0;
@@ -24,6 +23,7 @@
                 &~.row {
                     .cricle-check {
                         background-color: $brand-color;
+
                         svg {
                             display: block;
                         }

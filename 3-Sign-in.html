@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>DalelMakka</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='css/aos.css' media="all" rel='stylesheet' type='text/css'>
+    <link href='css/bootstrap.min.css' media="all" rel='stylesheet' type='text/css'>
+    <link href='css/style.min.css' media="all" rel='stylesheet' type='text/css'>
+
+</head>
+
+<body id="body">
+    <!-- Loader -->
+    <div class="loader">
+        <img src="../DalelMakka/img/Frame.png">
+        <svg version="1.1" id="L4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            y="0px" width="60" enable-background="new 0 0 0 0" xml:space="preserve">
+            <circle fill="#fff" stroke="none" cx="6" cy="50" r="6">
+                <animate attributeName="opacity" dur="1s" values="0;1;0" repeatCount="indefinite" begin="0.1" />
+            </circle>
+            <circle fill="#fff" stroke="none" cx="26" cy="50" r="6">
+                <animate attributeName="opacity" dur="1s" values="0;1;0" repeatCount="indefinite" begin="0.2" />
+            </circle>
+            <circle fill="#fff" stroke="none" cx="46" cy="50" r="6">
+                <animate attributeName="opacity" dur="1s" values="0;1;0" repeatCount="indefinite" begin="0.3" />
+            </circle>
+        </svg>
+    </div>
+    <!-- /Loader -->
+    <header class="header">
+        <div class="row gx-0">
+            <div class="col">
+                <div id="clock"></div>
+            </div>
+            <div class="col-auto"><img alt="" src="./img/right-side.svg"></div>
+        </div>
+    </header>
+    <!-- Navigato -->
+    <div class="navigator">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2">
+                    <div data-aos="fade-left" data-aos-duration="600" data-aos-easing="linear">
+                        <a href="./2-Select-Language.html">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.57 5.93L3.5 12L9.57 18.07" stroke="white" stroke-width="1.5"
+                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M20.4999 12H3.66992" stroke="white" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-8 text-center d-flex align-items-center justify-content-center">
+                    <h2>Sign in</h2>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- /Navigato -->
+
+
+    <!-- Mobile Wrapper -->
+    <div class="mobile-wrapper with-nav">
+        <form class="mt-5">
+            <div class="mb-4 custom-input-with-select" data-aos="fade-up-right" data-aos-duration="500"
+                data-aos-easing="linear">
+                <label for="exampleInputPhone" class="form-label">Phone Number</label>
+                <input type="email" class="form-control" id="exampleInputPhone" aria-describedby="emailHelp"
+                    placeholder="Enter phone">
+                <select class="form-control">
+                    <option value="+966">+966</option>
+                    <option value="+966">+123</option>
+                    <option value="+966">+33</option>
+                    <option value="+966">+02</option>
+                </select>
+                <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+            </div>
+            <div class="custom-input-password-show" data-aos="fade-up-left" data-aos-duration="500"
+                data-aos-easing="linear">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="***********">
+                <div class="show-pw-icon" toggle="#exampleInputPassword1">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.6849 9C11.6849 10.485 10.4849 11.685 8.99994 11.685C7.51494 11.685 6.31494 10.485 6.31494 9C6.31494 7.515 7.51494 6.315 8.99994 6.315C10.4849 6.315 11.6849 7.515 11.6849 9Z"
+                            stroke="#525252" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M8.99988 15.2025C11.6474 15.2025 14.1149 13.6425 15.8324 10.9425C16.5074 9.88501 16.5074 8.10751 15.8324 7.05001C14.1149 4.35001 11.6474 2.79001 8.99988 2.79001C6.35238 2.79001 3.88488 4.35001 2.16738 7.05001C1.49238 8.10751 1.49238 9.88501 2.16738 10.9425C3.88488 13.6425 6.35238 15.2025 8.99988 15.2025Z"
+                            stroke="#525252" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="500" data-aos-easing="linear">
+                <a href="" class="d-block text-center font-b my-4 text-sm" style="color: #9F9F9F;">Forgot Password?</a>
+            </div>
+            <button type="submit" class="btn btn-primary w-100" data-aos="fade-up" data-aos-duration="600"
+                data-aos-easing="linear">Sign in</button>
+        </form>
+
+        <div class="mt-5 pt-4 mb-4" data-aos="fade-right" data-aos-duration="500" data-aos-easing="linear">
+            <h2 class="sepretor-title">Or Continue With</h2>
+        </div>
+        <div class="row gx-0 pt-2 justify-content-center mb-5" data-aos="fade-up" data-aos-duration="500"
+            data-aos-easing="linear">
+            <div class="col-auto px-3">
+                <a href="">
+                    <img alt="..." src="./img/ios.svg">
+                </a>
+            </div>
+            <div class="col-auto px-3">
+                <a href="">
+                    <img alt="..." src="./img/google.svg">
+                </a>
+            </div>
+            <div class="col-auto px-3">
+                <a href="">
+                    <img alt="..." src="./img/fb.svg">
+                </a>
+            </div>
+        </div>
+
+        <div class="pt-5" data-aos="fade-up" data-aos-duration="600" data-aos-easing="linear">
+            <a href="./4-Create a new account.html" class="btn btn-outline-primary">create a new account</a>
+        </div>
+    </div>
+    <!-- /Mobile Wrapper -->
+
+    <!--Scripts-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

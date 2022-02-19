@@ -1,0 +1,58 @@
+.bottom-menu {
+    background-color: $dark-3;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 105px;
+    left: 0;
+    padding: 20px 0 35px;
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    z-index: 99;
+
+    .bottom-menu-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #525252;
+        width: 75px;
+
+        .icon {
+            margin-bottom: 5px;
+        }
+
+        .title {
+            font-size: 12px;
+        }
+
+        &.active {
+            .icon {
+
+                path,
+                svg {
+                    stroke: $brand-color;
+                }
+            }
+
+            .title {
+                color: $brand-color;
+            }
+        }
+
+        &:first-child {
+            &.active {
+                .icon {
+
+                    path,
+                    svg {
+                        fill:$brand-color;
+                        stroke: $brand-color;
+                    }
+                }
+            }
+        }
+    }
+}
