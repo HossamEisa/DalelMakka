@@ -6,6 +6,7 @@
     padding: 0 20px;
     overflow: auto;
     max-height: 100%;
+    max-height: calc(100% - 48px);
 
     .splash-logo {
         display: flex;
@@ -17,10 +18,12 @@
     &.with-nav {
         margin-top: 90px;
         padding-bottom: 20px;
+        max-height: calc(100% - 90px);
+
     }
 
     &.with-menu {
-        padding-bottom: 160px;
+        padding-bottom: 110px;
         margin-top: 44px;
     }
 }
