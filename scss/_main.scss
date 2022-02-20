@@ -13,6 +13,7 @@
 
 // 3. Base stuff
 @import 'base/rest',
+'base/theme',
 'base/normalize',
 'base/base',
 'base/fonts',
@@ -24,6 +25,7 @@
 'components/scroll-to-top',
 'components/form.scss',
 'components/loader',
+'components/home-widget',
 'components/choeses-lang';
 
 // 5. Layout-related sections 
@@ -33,7 +35,7 @@
 'layout/layout';
 
 
-
+ 
 // 6. Page-specific styles
 
 @import 'pages/home';

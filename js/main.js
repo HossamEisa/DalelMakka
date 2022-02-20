@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 		minutes = minutes < 10 ? '0' + minutes : minutes;
 		seconds = seconds < 10 ? '0' + seconds : seconds;
 
-		var strTime = hours + ':' + minutes + ":" + seconds;
+		var strTime = hours + ':' + minutes;
 		document.getElementById('clock').innerHTML = strTime;
 	}
 

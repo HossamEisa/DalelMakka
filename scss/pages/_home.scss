@@ -2,6 +2,38 @@
     padding-top: 10px;
 }
 
+.prayer-banner {
+    background: url('../img/prayer.png');
+    margin-bottom: 20px;
+    background-size: cover;
+    height: 144px;
+    padding: 20px 5px 20px 20px;
+
+    .azan {
+        font-family: $almarai-bold;
+
+        .type {
+            font-size: 18px;
+        }
+
+        .clock-time {
+            font-size: 48px;
+
+            .sub {
+                font-size: 14px;
+                font-family: $almarai;
+
+            }
+        }
+
+        .more-time {
+            font-size: 12px;
+            font-family: $almarai;
+
+        }
+    }
+}
+
 .user-info {
     display: flex;
     align-items: center;
@@ -23,12 +55,14 @@
 
     .user-text {
         font-size: 16px;
-        font-family: $almarai-bold;
 
         p {
             color: $text-color-dark;
-            font-family: $almarai;
             font-size: 13px;
+        }
+
+        .name {
+            font-size: 16px;
         }
     }
 }

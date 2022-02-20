@@ -22,7 +22,7 @@ body {
 	box-sizing: border-box;
 	color: $text-color;
 	font-family: $almarai;
-	background: #121210;
+	background: var(--body-bg);
 	text-align: $left;
 	height: 100%;
 	overflow: hidden;
