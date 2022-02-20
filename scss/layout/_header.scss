@@ -2,4 +2,14 @@
     position: fixed;
     padding: 15px 20px;
     width: 100%;
+
+    img {
+        @at-root {
+            [data-theme="light"] & {
+                filter: contrast(0) brightness(0);
+            }
+        }
+
+    }
+
 }
