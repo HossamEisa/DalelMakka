@@ -9,6 +9,12 @@
     background-size: 100% 100%;
     text-align: center;
 
+    @at-root {
+        [data-theme="light"] & {
+            background-image: url('../img/light-item-home.svg');
+        }
+    }
+
     img {
         max-width: 70px
     }

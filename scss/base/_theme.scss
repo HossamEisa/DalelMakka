@@ -1,7 +1,11 @@
 :root {
     --body-bg: #121210;
+    --text-color: $text-color;
+    --dark3-bg: $dark3;
 }
 
 [data-theme="light"] {
-    --body-bg: #ffffff;
+    --body-bg: #F6F6F6;
+    --text-color: #000;
+    --dark3-bg: #F6F6F6;
 }

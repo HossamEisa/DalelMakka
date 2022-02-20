@@ -1,5 +1,5 @@
 .loader {
-    background-color: #121210;
+    background-color: var(--dark3-bg);
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -9,4 +9,12 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    @at-root {
+        [data-theme="light"] & {
+            circle {
+                fill: #000;
+            }
+        }
+    }
 }

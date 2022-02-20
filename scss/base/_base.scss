@@ -21,7 +21,7 @@ html,
 body {
 	direction: $direction;
 	box-sizing: border-box;
-	color: $text-color;
+	color: var(--text-color);
 	font-family: $almarai;
 	background: var(--body-bg);
 	text-align: $left;
