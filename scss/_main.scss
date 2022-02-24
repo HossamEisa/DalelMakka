@@ -26,6 +26,10 @@
 'components/form.scss',
 'components/loader',
 'components/home-widget',
+'components/profile',
+'components/more-item',
+'components/profile-setting-item',
+'components/avatar-upload',
 'components/choeses-lang';
 
 // 5. Layout-related sections 
@@ -35,7 +39,7 @@
 'layout/layout';
 
 
- 
+
 // 6. Page-specific styles
 
 @import 'pages/home';

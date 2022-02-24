@@ -4,4 +4,13 @@
     position: fixed;
     width: 100%;
     z-index: 2;
+
+    svg, path {
+        @at-root {
+            [data-theme="light"] & {
+                fill: #000;
+                stroke: #000;
+            }
+        }
+    }
 }

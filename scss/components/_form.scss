@@ -1,5 +1,5 @@
 .form-label {
-    color: #F6F6F6;
+    color: var(--text-color);
     font-size: calcRem(14);
 }
 
@@ -8,7 +8,7 @@
     padding: 0.475rem .75rem;
     border: 1px solid #bcbbbb;
     border-radius: $border-radius;
-    background-color: #121210;
+    background-color: var(--body-bg);
     color: #9F9F9F;
     font-size: calcRem(14);
 
@@ -43,7 +43,7 @@
         text-align: right;
         padding-right: 0px;
         margin-right: 10px;
-        color: $white;
+        color: var(--text-color);
 
         option {
             color: $black;

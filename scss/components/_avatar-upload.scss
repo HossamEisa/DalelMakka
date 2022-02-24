@@ -1,0 +1,49 @@
+.avatar-upload {
+    .avatar-edit {
+        position: absolute;
+        right: 20px;
+        z-index: 1;
+        bottom: -15px;
+        transform: translate(-50%, 0);
+
+        input {
+            display: none;
+
+            +label {
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                margin-bottom: 0;
+                border-radius: 100%;
+                background: $brand-color;
+                border: 1px solid transparent;
+                box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+                cursor: pointer;
+                font-weight: normal;
+                transition: all .2s ease-in-out;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid var(--dark3-bg);
+            }
+        }
+    }
+
+    .avatar-preview {
+        margin: 0 auto;
+        width: 120px;
+        height: 120px;
+        position: relative;
+        border-radius: 100%;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+
+        >#imagePreview {
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}
