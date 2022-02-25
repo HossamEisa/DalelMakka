@@ -5,12 +5,13 @@
         box-shadow: 0px 0px 20px #0000001a;
         width: 100%;
         background: var(--dark3-bg);
-        padding: 20px;
         border-radius: $border-radius;
         margin-bottom: 15px;
 
         a {
             color: var(--text-color);
+            padding: 20px;
+            display: block;
         }
 
         &:last-child {
