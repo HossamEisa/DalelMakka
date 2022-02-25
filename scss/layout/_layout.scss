@@ -26,13 +26,19 @@
     }
 
     &.with-gallery {
-        padding-top: 90px;
-        padding-bottom: 0;
         background-size: 100% 280px;
         background-repeat: no-repeat;
         height: 100%;
+        padding: 90px 0  0;
+
+        @at-root {
+            [data-theme="light"] & {
+                background-image: url('../img/light.png') !important;
+            }
+        }
 
         .gallary-content {
+            padding: 0 20px;
             overflow: auto;
             max-height: 100%;
             padding-bottom: 20px;
