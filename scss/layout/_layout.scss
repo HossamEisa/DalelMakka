@@ -1,5 +1,4 @@
 .mobile-wrapper {
-    max-width: 375px;
     margin: 0 auto;
     position: relative;
     z-index: 1;
@@ -24,6 +23,20 @@
     &.with-menu {
         padding-bottom: 150px;
         margin-top: 44px;
+    }
+
+    &.with-gallery {
+        padding-top: 90px;
+        padding-bottom: 0;
+        background-size: 100% 280px;
+        background-repeat: no-repeat;
+        height: 100%;
+
+        .gallary-content {
+            overflow: auto;
+            max-height: 100%;
+            padding-bottom: 20px;
+        }
     }
 }
 
