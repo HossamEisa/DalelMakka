@@ -5,7 +5,8 @@
     width: 100%;
     z-index: 2;
 
-    svg, path {
+    svg,
+    path {
         @at-root {
             [data-theme="light"] & {
                 stroke: #000;

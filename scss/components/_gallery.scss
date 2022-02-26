@@ -72,3 +72,22 @@
         }
     }
 }
+
+.gallary-album {
+    .gallary-album-item {
+        width: 100%;
+        height: 141px;
+        display: block;
+
+        img {
+            height: 100%;
+            border-radius: 10px;
+            max-width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.carousel__button.is-close {
+    right: auto;
+}
