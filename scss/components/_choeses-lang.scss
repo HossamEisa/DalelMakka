@@ -33,11 +33,12 @@
         }
 
         .label {
-            border: 1px solid #FFFFFF0D;
-            background: #222221;
+            border: 1px solid var(--dark3-bg);
+            background: var(--dark3-bg);
             padding: 15px;
             width: 100%;
             border-radius: $border-radius;
+            box-shadow: 0px 0px 20px #0000001a;
 
             .cricle-check {
                 height: 30px;
@@ -47,6 +48,13 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                margin-top: 5px;
+
+                @at-root {
+                    [data-theme="light"] & {
+                        background: #646464;
+                    }
+                }
 
                 svg {
                     display: none;

@@ -15,7 +15,7 @@
     &:focus {
         border-color: $brand-color;
         box-shadow: 0 0 0 0.2rem $brand-color;
-        background-color: #121210;
+        background-color: var(--dark3-bg);
         color: #9F9F9F;
     }
 
@@ -105,7 +105,8 @@
         &:focus {
             border-color: $brand-color;
             box-shadow: 0 0 0 0.2rem $brand-color;
-            background-color: #121210;
+            background-color: var(--dark3-bg);
+
             color: #9F9F9F;
             outline: none;
         }
@@ -114,5 +115,31 @@
     [placeholder]:focus::-webkit-input-placeholder {
         transition: opacity 0.5s 0.0s ease;
         opacity: 0;
+    }
+}
+
+
+// 
+
+
+
+.form-switch .form-check-input:focus {
+    box-shadow: none;
+    background-image: url('../img/toggle-radio-white.svg');
+    border: none;
+    background-size: 20px 40px;
+}
+
+.form-switch .form-check-input {
+    background-image: url('../img/toggle-radio-white.svg');
+    background-color: #525252;
+    height: 24px;
+    width: 40px;
+    background-size: 20px 40px;
+
+    &:checked {
+        background-color: $brand-color;
+        border-color: $brand-color;
+        background-size: 20px 40px;
     }
 }
