@@ -12,5 +12,17 @@
                 stroke: #000;
             }
         }
+
+        
+    }
+
+    .col-2 {
+        svg {
+            @at-root {
+                [data-dir="rtl"] & {
+                    transform: rotate(180deg);
+                }
+            }
+        }
     }
 }

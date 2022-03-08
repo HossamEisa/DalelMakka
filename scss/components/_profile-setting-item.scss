@@ -33,5 +33,15 @@
                 }
             }
         }
+
+        .col-auto {
+            svg {
+                @at-root {
+                    [data-dir="rtl"] & {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
     }
 }
