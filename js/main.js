@@ -83,7 +83,7 @@
 
 
    if (localStorage.getItem('dir') == null) {
-   	localStorage.setItem('dir', 'ltr');
+   	localStorage.setItem('dir', 'rtl');
    }
    var directions = localStorage.getItem('dir');
 
