@@ -31,7 +31,8 @@
 'components/profile-setting-item',
 'components/avatar-upload',
 'components/gallery',
-'components/choeses-lang';
+'components/choeses-lang',
+'components/timeline-list';
 
 // 5. Layout-related sections 
 @import 'layout/header',
@@ -44,3 +45,4 @@
 // 6. Page-specific styles
 
 @import 'pages/home';
+@import 'pages/post-content';

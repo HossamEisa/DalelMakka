@@ -6,6 +6,7 @@
     border-radius: $border-radius;
     height: 100px;
     text-align: center;
+
     a {
         color: var(--text-color)
     }
@@ -13,5 +14,42 @@
     .title {
         @include line-clamp(2);
         margin-top: 10px;
+    }
+}
+
+.list-item {
+    box-shadow: 0px 0px 20px #0000001a;
+    width: 100%;
+    background: var(--dark3-bg);
+    padding: 15px 10px;
+    border-radius: $border-radius;
+    height: 116px;
+    text-align: center;
+
+
+    a {
+        color: var(--text-color)
+    }
+
+    .title {
+        @include line-clamp(2);
+        margin-top: 8px;
+        font-size: 17px;
+        font-family: $almarai;
+        line-height: 1.4;
+
+    }
+
+    .circle-number {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        border: 1px solid $brand-color;
+        background-color: #bc973925;
+        color: $brand-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: $almarai-bold;
     }
 }

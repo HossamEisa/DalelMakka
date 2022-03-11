@@ -64,8 +64,6 @@
 
    document.addEventListener("DOMContentLoaded", function () {
    	//do work
-   	console.log('sss');
-
    	jQuery('body').on('click', '.select-lang-form input', function (event) {
    		if (event.target.value == 'rtl') {
    			localStorage.setItem('dir', 'rtl')
@@ -175,15 +173,53 @@
    		$(this).addClass('active').siblings().removeClass('active');
    	});
 
-   	// $('body').on('change', '#dark-theme-toggle', function () {
-   	// 	if ($(this).prop('checked')) {
-   	// 		console.log('dark mode');
-   	// 		$('body').attr('data-theme', 'dark');
-   	// 	} else {
-   	// 		console.log('light mode');
-   	// 		$('body').attr('data-theme', 'light');
+   	$('#setting-area').on('click', function () {
+   		$('.settings').slideToggle(500)
+   	});
 
-   	// 	}
-   	// });
+   	if (localStorage.getItem('fontSize') == null) {
+   		localStorage.setItem('fontSize', '');
+   	}
+   	var fontSize = localStorage.getItem('fontSize');
+
+   	if (fontSize == '') {
+   		$('html').removeClass('fontsize-md fontsize-lg fontsize-xl');
+   		$('#change-font-size').val(0)
+   	}
+   	if (fontSize == 'md') {
+   		$('html').removeClass('fontsize-md fontsize-lg fontsize-xl').addClass('fontsize-md');
+   		$('#change-font-size').val(1)
+
+   	}
+   	if (fontSize == 'lg') {
+   		$('html').removeClass('fontsize-md fontsize-lg fontsize-xl').addClass('fontsize-lg');
+   		$('#change-font-size').val(2)
+
+   	}
+   	if (fontSize == 'xl') {
+   		$('html').removeClass('fontsize-md fontsize-lg fontsize-xl').addClass('fontsize-xl');
+   		$('#change-font-size').val(3)
+
+   	}
+   	$('#change-font-size').on('change', function (e) {
+   		let itemValue = $(this).val();
+   		console.log(itemValue);
+   		if (itemValue == 0) {
+   			$('html').removeClass('fontsize-md fontsize-lg fontsize-xl');
+   			localStorage.setItem('fontSize', '');
+   		}
+   		if (itemValue == 1) {
+   			$('html').addClass('fontsize-md').removeClass('fontsize-lg fontsize-xl');
+   			localStorage.setItem('fontSize', 'md');
+   		}
+   		if (itemValue == 2) {
+   			$('html').addClass('fontsize-lg').removeClass('fontsize-md fontsize-xl');
+   			localStorage.setItem('fontSize', 'lg');
+   		}
+   		if (itemValue == 3) {
+   			$('html').addClass('fontsize-xl').removeClass('fontsize-md fontsize-lg');
+   			localStorage.setItem('fontSize', 'xl');
+   		}
+   	});
 
    })(jQuery);

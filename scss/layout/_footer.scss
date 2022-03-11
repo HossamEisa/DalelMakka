@@ -3,16 +3,18 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 95px;
+    height: calcRem(95);
     left: 0;
     padding: 20px 0 35px;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
     z-index: 99;
     box-shadow: 0px 0px 20px #0000001a;
-a {
-    color: #525252;
-}
+
+    a {
+        color: #525252;
+    }
+
     .bottom-menu-item {
         display: flex;
         flex-direction: column;
@@ -52,6 +54,38 @@ a {
                         fill: $brand-color;
                         stroke: $brand-color;
                     }
+                }
+            }
+        }
+    }
+}
+
+
+.post-setting {
+    background-color: var(--dark3-bg);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    padding: 20px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    z-index: 99;
+    box-shadow: 0px 0px 20px #0000001a;
+
+    .title {
+        color: #9F9F9F;
+    }
+
+    .settings {
+        display: none;
+    }
+
+    #setting-area {
+        @at-root {
+            [data-dir="rtl"] & {
+                svg {
+                    transform: rotate(180deg);
                 }
             }
         }

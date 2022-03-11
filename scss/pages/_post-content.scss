@@ -1,0 +1,17 @@
+.post-content {
+    line-height: 1.4;
+
+    .post-content-list {
+        margin-top: calcRem(20);
+
+        li {
+            list-style: disc;
+        }
+
+        .title {
+            color: $brand-color;
+            font-size: calcRem(16);
+            font-family: $almarai-bold;
+        }
+    }
+}
