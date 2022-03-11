@@ -29,7 +29,7 @@
         background-size: 100% 280px;
         background-repeat: no-repeat;
         height: 100%;
-        padding: 90px 0  0;
+        padding: 90px 0 0;
 
         @at-root {
             [data-theme="light"] & {
@@ -43,6 +43,11 @@
             max-height: 100%;
             padding-bottom: 20px;
         }
+    }
+
+    &.settings {
+        padding-bottom: 220px;
+        margin-top: 100px;
     }
 }
 
