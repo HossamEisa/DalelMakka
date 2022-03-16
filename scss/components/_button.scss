@@ -42,6 +42,14 @@
             color: $black;
         }
     }
+
+    &.btn-danger {
+        background-color: #BC3939;
+    }
+
+    &.btn-success {
+        background-color: #009A74;
+    }
 }
 
 // .btn-primary 

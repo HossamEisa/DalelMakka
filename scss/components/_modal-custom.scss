@@ -1,0 +1,24 @@
+.modal-dialog {
+    &.centered {
+        margin-top: 50%;
+    }
+
+    .modal-content {
+        background-color: var(--dark3-bg);
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+.btn-close {
+    color: var(--text-color);
+    background: none;
+
+    svg {
+        path {
+            stroke: var(--text-color);
+        }
+    }
+}

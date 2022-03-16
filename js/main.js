@@ -78,14 +78,10 @@
    });
 
 
-
-
    if (localStorage.getItem('dir') == null) {
    	localStorage.setItem('dir', 'rtl');
    }
    var directions = localStorage.getItem('dir');
-
-
    isDir(directions);
 
    function isDir(dir) {
@@ -93,9 +89,6 @@
 
    	if (dir == 'ltr') {
    		bodyElemet[0].setAttribute('data-dir', 'ltr');
-
-
-
    		document.addEventListener("DOMContentLoaded", function () {
    			document.querySelector(".dir-ltr-toggle").checked = true;
    			document.querySelector(".dir-rtl-toggle").checked = false;
