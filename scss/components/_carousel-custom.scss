@@ -1,0 +1,48 @@
+.tabs-carousel {
+    .nav {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+
+
+    .swiper-slide {
+        all: unset;
+        border: 1px solid #9F9F9F;
+        border-radius: 50px;
+        padding: 10px;
+        flex-shrink: 0;
+        font-size: calcRem(16);
+
+        @at-root {
+            body[data-theme="light"] & {
+                background-color: #ccc;
+
+                &.active {
+                    border-color: $brand-color;
+                    color: #fff;
+                    background-color: $brand-color;
+                }
+            }
+        }
+
+        &.active {
+            border-color: $brand-color;
+            background-color: $brand-color;
+        }
+    }
+
+
+}
+
+.tabs-conent-para {
+    line-height: 1.5;
+}
+
+.circles-text {
+    color: $brand-color;
+}
+
+.swiper {
+    direction: ltr;
+}
