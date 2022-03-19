@@ -61,8 +61,7 @@
     </div>
 
     <!-- Mobile Wrapper -->
-    <div class="mobile-wrapper with-gallery"
-        style="background-image: url(./img/ka3ba.png); background-size: 100%;">
+    <div class="mobile-wrapper with-gallery" style="background-image: url(./img/ka3ba.png); background-size: 100%;">
         <div class="gallary-content pt-5 mt-5">
             <div class="swiper tabs-carousel" data-aos="fade-up-left">
                 <div class="swiper-wrapper nav" id="nav-tab" role="tablist">
@@ -182,10 +181,10 @@
             },
         });
 
-        Circles.create({
+        var myCircle = Circles.create({
             id: 'circles-1',
             radius: 60,
-            value: 23,
+            value: 0,
             maxValue: 100,
             width: 10,
             text: function (value) { return value + ''; },
@@ -196,6 +195,11 @@
             valueStrokeClass: 'circles-valueStroke',
             maxValueStrokeClass: 'circles-maxValueStroke',
             styleWrapper: true,
+        });
+
+        $('#circles-1').on('click', function () {
+            var currentValue = myCircle.getValue();
+            myCircle.update(currentValue + 1)
         });
     </script>
 

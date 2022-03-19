@@ -18,9 +18,11 @@
 	&.fontsize-md {
 		font-size: 17px;
 	}
+
 	&.fontsize-lg {
 		font-size: 18px;
 	}
+
 	&.fontsize-xl {
 		font-size: 20px;
 	}
@@ -118,4 +120,9 @@ p {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
 	background: blue-overlay;
+}
+
+.disabled {
+	cursor: not-allowed;
+	pointer-events: none;
 }
