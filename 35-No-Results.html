@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>DalelMakka</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='css/aos.css' media="all" rel='stylesheet' type='text/css'>
+    <link href='css/bootstrap.min.css' media="all" rel='stylesheet' type='text/css'>
+    <link href='css/style.min.css' media="all" rel='stylesheet' type='text/css'>
+
+</head>
+
+<body id="body">
+    <!-- Loader -->
+    <div class="loader">
+        <img src="../DalelMakka/img/Frame.png">
+        <svg version="1.1" id="L4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            y="0px" width="60" enable-background="new 0 0 0 0" xml:space="preserve">
+            <circle fill="#fff" stroke="none" cx="6" cy="50" r="6">
+                <animate attributeName="opacity" dur="1s" values="0;1;0" repeatCount="indefinite" begin="0.1" />
+            </circle>
+            <circle fill="#fff" stroke="none" cx="26" cy="50" r="6">
+                <animate attributeName="opacity" dur="1s" values="0;1;0" repeatCount="indefinite" begin="0.2" />
+            </circle>
+            <circle fill="#fff" stroke="none" cx="46" cy="50" r="6">
+                <animate attributeName="opacity" dur="1s" values="0;1;0" repeatCount="indefinite" begin="0.3" />
+            </circle>
+        </svg>
+    </div>
+    <!-- /Loader -->
+    <header class="header">
+        <div class="row gx-0">
+            <div class="col">
+                <div id="clock"></div>
+            </div>
+            <div class="col-auto"><img alt="" src="./img/right-side.svg"></div>
+        </div>
+    </header>
+
+    <div class="navigator">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2" data-aos="fade-left">
+                </div>
+                <div class="col-8 text-center d-flex align-items-center justify-content-center">
+                    <h2>Search</h2>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile Wrapper -->
+    <div class="mobile-wrapper with-menu pt-5">
+        <div class="form-group mt-4">
+            <div class="mb-4 position-relative" data-aos="fade-up-left" data-aos-duration="500"
+                data-aos-easing="linear">
+                <input type="search" class="form-control" id="examplename" aria-describedby="examplename"
+                    placeholder="Search by name or nickname">
+                <span class="search-icon">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d_1006_1809)">
+                            <path
+                                d="M12.625 15.75C16.56 15.75 19.75 12.56 19.75 8.625C19.75 4.68997 16.56 1.5 12.625 1.5C8.68997 1.5 5.5 4.68997 5.5 8.625C5.5 12.56 8.68997 15.75 12.625 15.75Z"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M20.5 16.5L19 15" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                            <filter id="filter0_d_1006_1809" x="0.75" y="0.75" width="24.5" height="24.5"
+                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                <feOffset dy="4" />
+                                <feGaussianBlur stdDeviation="2" />
+                                <feComposite in2="hardAlpha" operator="out" />
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1006_1809" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1006_1809"
+                                    result="shape" />
+                            </filter>
+                        </defs>
+                    </svg>
+
+                </span>
+            </div>
+        </div>
+
+
+
+        <div data-aos="fade-up" style="    height: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;">
+            <span>
+                <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_917_8987)">
+                        <path
+                            d="M47.9527 58.4697H9.10615C6.7725 58.4697 4.88086 56.5779 4.88086 54.2444V4.22529C4.88072 1.89178 6.7725 0 9.10615 0H47.9529C50.2865 0 52.1782 1.89178 52.1782 4.22529V54.2443C52.1782 56.5779 50.2864 58.4697 47.9527 58.4697Z"
+                            fill="#F7F6F7" />
+                        <path
+                            d="M47.9538 0H43.7285C46.0622 0 47.9538 1.89178 47.9538 4.22529V54.2443C47.9538 56.5779 46.062 58.4696 43.7285 58.4696H47.9538C50.2875 58.4696 52.1791 56.5778 52.1791 54.2443V4.22529C52.1792 1.89178 50.2875 0 47.9538 0V0Z"
+                            fill="#EDEBED" />
+                        <path
+                            d="M51.5493 70H4.22529C1.89178 70 0 68.1082 0 65.7747V29.5775C0 27.2438 1.89178 25.3522 4.22529 25.3522H24.8369C26.5173 25.3522 27.982 26.4958 28.3895 28.1259L29.1152 31.029C29.5228 32.6592 30.9874 33.8028 32.6679 33.8028H51.5491C53.8828 33.8028 55.7744 35.6945 55.7744 38.0281V65.7746C55.7747 68.1082 53.8829 70 51.5493 70Z"
+                            fill="#EFCE4A" />
+                        <path
+                            d="M51.5495 33.8028H47.3242C49.6579 33.8028 51.5495 35.6945 51.5495 38.0281V65.7746C51.5495 68.1082 49.6577 69.9999 47.3242 69.9999H51.5495C53.8832 69.9999 55.7748 68.1081 55.7748 65.7746V38.0282C55.7749 35.6945 53.8832 33.8028 51.5495 33.8028Z"
+                            fill="#EBBA16" />
+                        <path
+                            d="M24.164 28.1259L24.8897 31.029C25.2972 32.6592 26.7619 33.8028 28.4423 33.8028H32.6676C30.9872 33.8028 29.5225 32.6591 29.115 31.029L28.3893 28.1259C27.9817 26.4957 26.517 25.3522 24.8366 25.3522H20.6113C22.2917 25.3522 23.7564 26.4957 24.164 28.1259Z"
+                            fill="#EBBA16" />
+                        <path
+                            d="M42.9375 7.39444H12.3454C11.762 7.39444 11.2891 6.92153 11.2891 6.33815C11.2891 5.75477 11.762 5.28186 12.3454 5.28186H42.9375C43.5211 5.28186 43.9938 5.75477 43.9938 6.33815C43.9938 6.92153 43.5211 7.39444 42.9375 7.39444Z"
+                            fill="#A198A4" />
+                        <path
+                            d="M36.5995 13.7325H12.3454C11.762 13.7325 11.2891 13.2595 11.2891 12.6762C11.2891 12.0928 11.762 11.6199 12.3454 11.6199H36.5995C37.1831 11.6199 37.6558 12.0928 37.6558 12.6762C37.656 13.2594 37.1831 13.7325 36.5995 13.7325Z"
+                            fill="#A198A4" />
+                        <path
+                            d="M34.4868 20.0705H12.3454C11.762 20.0705 11.2891 19.5976 11.2891 19.0142C11.2891 18.4308 11.762 17.9579 12.3454 17.9579H34.4868C35.0702 17.9579 35.5431 18.4308 35.5431 19.0142C35.5431 19.5976 35.0703 20.0705 34.4868 20.0705Z"
+                            fill="#A198A4" />
+                        <path d="M45.7852 44.4843L41.0432 41.7465L46.7977 31.7796L51.5397 34.5174L45.7852 44.4843Z"
+                            fill="#A198A4" />
+                        <path
+                            d="M32.9417 61.251C35.2131 62.5624 38.1176 61.7842 39.429 59.5127L47.8369 44.9497C48.3923 43.9878 48.0626 42.7579 47.1008 42.2025L42.3587 39.4647C41.3968 38.9094 40.1668 39.239 39.6115 40.2008L31.2036 54.7638C29.892 57.0351 30.6702 59.9396 32.9417 61.251Z"
+                            fill="#655E68" />
+                        <path
+                            d="M47.1016 42.2025L42.3595 39.4646C41.3975 38.9092 40.1676 39.2388 39.6123 40.2006L39.5615 40.2886L42.8763 42.2023C43.8383 42.7577 44.1677 43.9878 43.6124 44.9496L35.2045 59.5126C34.7188 60.3537 34.0146 60.9894 33.2051 61.3907C35.4332 62.4997 38.1684 61.6975 39.4298 59.5126L47.8377 44.9496C48.3932 43.9878 48.0636 42.7577 47.1016 42.2025Z"
+                            fill="#544F57" />
+                        <path
+                            d="M43.6914 37.1554C45.1097 38.2979 46.705 39.2294 48.4293 39.9007L51.538 34.5161L46.7959 31.7784L43.6914 37.1554Z"
+                            fill="#8B808E" />
+                        <path
+                            d="M68.7521 29.1715C72.0612 21.5197 68.5408 12.6342 60.889 9.32506C53.2372 6.01594 44.3516 9.53639 41.0425 17.1882C37.7333 24.84 41.2538 33.7256 48.9056 37.0347C56.5574 40.3438 65.443 36.8233 68.7521 29.1715Z"
+                            fill="#A4CCFF" />
+                        <path
+                            d="M54.9076 8.11194C54.1907 8.11194 53.4856 8.16334 52.7949 8.26055C60.1202 9.29127 65.7746 15.5993 65.7746 23.2045C65.7746 30.8094 60.1202 37.1175 52.7949 38.1482C53.4855 38.2454 54.1905 38.2968 54.9076 38.2968C63.2296 38.2968 70 31.5264 70 23.2045C70 14.8824 63.2296 8.11194 54.9076 8.11194Z"
+                            fill="#8BB3EA" />
+                        <path
+                            d="M57.1853 32.2499C62.1894 31.0079 65.2392 25.9445 63.9972 20.9404C62.7552 15.9364 57.6918 12.8867 52.6877 14.1287C47.6836 15.3707 44.6338 20.4341 45.8758 25.4381C47.1178 30.4422 52.1812 33.4919 57.1853 32.2499Z"
+                            fill="#E6ECF8" />
+                        <path
+                            d="M54.9076 13.8731C54.1808 13.8731 53.4743 13.9594 52.7949 14.1173C56.9255 15.0775 60.0135 18.7859 60.0135 23.2045C60.0135 27.6229 56.9255 31.3313 52.7949 32.2915C53.4743 32.4494 54.1808 32.5357 54.9076 32.5357C60.0529 32.5357 64.2388 28.3497 64.2388 23.2045C64.2388 18.0591 60.0529 13.8731 54.9076 13.8731Z"
+                            fill="#D7E1F3" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_917_8987">
+                            <rect width="70" height="70" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+
+            </span>
+            <p class="text-center mt-3" style="color: #9F9F9F">No results Found...</p>
+        </div>
+    </div>
+
+    <div class="bottom-menu with-menu">
+        <div class="row gx-0 justify-content-center">
+            <div class="col-auto bottom-menu-item ">
+                <div class="icon">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M21.33 8.01002L14.78 2.77002C13.5 1.75002 11.5 1.74002 10.23 2.76002L3.67996 8.01002C2.73996 8.76002 2.16996 10.26 2.36996 11.44L3.62996 18.98C3.91996 20.67 5.48996 22 7.19996 22H17.8C19.49 22 21.09 20.64 21.38 18.97L22.64 11.43C22.82 10.26 22.25 8.76002 21.33 8.01002ZM13.25 18C13.25 18.41 12.91 18.75 12.5 18.75C12.09 18.75 11.75 18.41 11.75 18V15C11.75 14.59 12.09 14.25 12.5 14.25C12.91 14.25 13.25 14.59 13.25 15V18Z"
+                            fill="#525252" />
+                    </svg>
+                </div>
+                <h6 class="title">Home</h6>
+            </div>
+            <div class="col-auto bottom-menu-item">
+                <div class="icon">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M17.5 18.4301H13.5L9.04999 21.39C8.38999 21.83 7.5 21.3601 7.5 20.5601V18.4301C4.5 18.4301 2.5 16.4301 2.5 13.4301V7.42999C2.5 4.42999 4.5 2.42999 7.5 2.42999H17.5C20.5 2.42999 22.5 4.42999 22.5 7.42999V13.4301C22.5 16.4301 20.5 18.4301 17.5 18.4301Z"
+                            stroke="#525252" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path
+                            d="M12.4998 11.36V11.15C12.4998 10.47 12.9198 10.11 13.3398 9.82001C13.7498 9.54001 14.1598 9.18002 14.1598 8.52002C14.1598 7.60002 13.4198 6.85999 12.4998 6.85999C11.5798 6.85999 10.8398 7.60002 10.8398 8.52002"
+                            stroke="#525252" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12.4955 13.75H12.5045" stroke="#525252" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+
+                </div>
+                <h6 class="title">About</h6>
+            </div>
+            <div class="col-auto bottom-menu-item active">
+                <div class="icon">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 21C17.2467 21 21.5 16.7467 21.5 11.5C21.5 6.25329 17.2467 2 12 2C6.75329 2 2.5 6.25329 2.5 11.5C2.5 16.7467 6.75329 21 12 21Z"
+                            stroke="#525252" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M22.5 22L20.5 20" stroke="#525252" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+
+                </div>
+                <h6 class="title">Search</h6>
+            </div>
+            <div class="col-auto bottom-menu-item ">
+                <a href="./9-profile-settings.html" class="d-block text-center">
+                    <div class="icon">
+                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.5 15C14.1569 15 15.5 13.6569 15.5 12C15.5 10.3431 14.1569 9 12.5 9C10.8431 9 9.5 10.3431 9.5 12C9.5 13.6569 10.8431 15 12.5 15Z"
+                                stroke="#525252" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M2.5 12.88V11.12C2.5 10.08 3.35 9.22 4.4 9.22C6.21 9.22 6.95 7.94 6.04 6.37C5.52 5.47 5.83 4.3 6.74 3.78L8.47 2.79C9.26 2.32 10.28 2.6 10.75 3.39L10.86 3.58C11.76 5.15 13.24 5.15 14.15 3.58L14.26 3.39C14.73 2.6 15.75 2.32 16.54 2.79L18.27 3.78C19.18 4.3 19.49 5.47 18.97 6.37C18.06 7.94 18.8 9.22 20.61 9.22C21.65 9.22 22.51 10.07 22.51 11.12V12.88C22.51 13.92 21.66 14.78 20.61 14.78C18.8 14.78 18.06 16.06 18.97 17.63C19.49 18.54 19.18 19.7 18.27 20.22L16.54 21.21C15.75 21.68 14.73 21.4 14.26 20.61L14.15 20.42C13.25 18.85 11.77 18.85 10.86 20.42L10.75 20.61C10.28 21.4 9.26 21.68 8.47 21.21L6.74 20.22C5.83 19.7 5.52 18.53 6.04 17.63C6.95 16.06 6.21 14.78 4.4 14.78C3.35 14.78 2.5 13.92 2.5 12.88Z"
+                                stroke="#525252" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+
+                    </div>
+                    <h6 class="title">Settings</h6>
+                </a>
+            </div>
+            <div class="col-auto bottom-menu-item ">
+                <a href="./8-More.html" class="d-block text-center">
+                    <div class="icon">
+                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.5 7H21.5" stroke="#525252" stroke-width="1.5" stroke-linecap="round" />
+                            <path d="M3.5 12H21.5" stroke="#525252" stroke-width="1.5" stroke-linecap="round" />
+                            <path d="M3.5 17H21.5" stroke="#525252" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+
+                    </div>
+                    <h6 class="title">More</h6>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- /Mobile Wrapper -->
+
+    <!--Scripts-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        });
+    </script>
+
+</body>
+
+</html>

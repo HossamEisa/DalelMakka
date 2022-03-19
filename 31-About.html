@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>DalelMakka</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='css/aos.css' media="all" rel='stylesheet' type='text/css'>
+    <link href='css/bootstrap.min.css' media="all" rel='stylesheet' type='text/css'>
+    <link href='css/style.min.css' media="all" rel='stylesheet' type='text/css'>
+
+</head>
+
+<body id="body" data-theme="dark">
+    <!-- Loader -->
+    <div class="loader">
+        <img src="../DalelMakka/img/Frame.png">
+        <svg version="1.1" id="L4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            y="0px" width="60" enable-background="new 0 0 0 0" xml:space="preserve">
+            <circle fill="#fff" stroke="none" cx="6" cy="50" r="6">
+                <animate attributeName="opacity" dur="1s" values="0;1;0" repeatCount="indefinite" begin="0.1" />
+            </circle>
+            <circle fill="#fff" stroke="none" cx="26" cy="50" r="6">
+                <animate attributeName="opacity" dur="1s" values="0;1;0" repeatCount="indefinite" begin="0.2" />
+            </circle>
+            <circle fill="#fff" stroke="none" cx="46" cy="50" r="6">
+                <animate attributeName="opacity" dur="1s" values="0;1;0" repeatCount="indefinite" begin="0.3" />
+            </circle>
+        </svg>
+    </div>
+    <!-- /Loader -->
+    <header class="header">
+        <div class="row gx-0">
+            <div class="col">
+                <div id="clock"></div>
+            </div>
+            <div class="col-auto"><img alt="" src="./img/right-side.svg"></div>
+        </div>
+    </header>
+    <div class="navigator">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2" data-aos="fade-left">
+                    <a href="./8-More.html">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.57 5.93L3.5 12L9.57 18.07" stroke="white" stroke-width="1.5"
+                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M20.4999 12H3.66992" stroke="white" stroke-width="1.5" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="col-8 text-center d-flex align-items-center justify-content-center">
+                    <h2>About</h2>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Wrapper -->
+    <div class="mobile-wrapper with-nav">
+        <div class="text-center mt-5">
+            <span>
+                <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M112.5 96.6822L84.375 77.9334V30.349H28.125V2.22398H120V79.5677H112.5V96.6822Z"
+                        fill="#EFCE4A" />
+                    <path d="M73.8281 30.349H84.375V77.9334L112.5 96.6822V79.5677H120V2.22398H73.8281V30.349Z"
+                        fill="#EBBA16" />
+                    <path d="M7.03125 117.776V100.661H0V23.3177H91.4062V100.661H32.7049L7.03125 117.776Z"
+                        fill="#66CCFF" />
+                    <path d="M45.7031 23.3177H91.4062V100.661H45.7031V23.3177Z" fill="#59ABFF" />
+                    <path
+                        d="M49.2188 72.5365V58.474H35.1562V65.5052H42.1875V72.5365H35.1562V79.5677H56.25V72.5365H49.2188Z"
+                        fill="#F3F5F9" />
+                    <path d="M42.1875 44.4115H49.2188V51.4427H42.1875V44.4115Z" fill="#F3F5F9" />
+                    <path d="M45.7031 44.4115H49.2188V51.4427H45.7031V44.4115Z" fill="#E1E6F0" />
+                    <path d="M49.2188 58.474H45.7031V79.5677H56.25V72.5365H49.2188V58.474Z" fill="#E1E6F0" />
+                </svg>
+
+            </span>
+        </div>
+        <p class="mt-3 text-lg font-b mb-4" style="line-height: 1.5;">Hajj is one of the fundamental pillars of Islam, an
+            annual spiritual experience undertaken by Muslims at least once their lifetime</p>
+
+        <p class="mb-4">Hajj is one of the fundamental pillars of Islam, an annual spiritual experience undertaken by Muslims at
+            least once their lifetime to express their faith in and servitude towards Allah (Subhanahu Wa Ta’ala – Glory
+            to him, the exalted). Let’s understand the Hajj rituals that every pilgrim carries out during their
+            pilgrimage to Makkah.</p>
+        <p>The Hajj, in essence, means ‘pilgrimage’ to the holy city of Makkah in Arabic and must be performed by every
+            Muslim each year during the first ten days of the sacred month of Dhu al-Hijjah, the final month of the
+            Islamic lunar calendar.</p>
+    </div>
+
+
+    <!-- /Mobile Wrapper -->
+
+    <!--Scripts-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        });
+    </script>
+    <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    jQuery('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
+                    jQuery('#imagePreview').hide();
+                    jQuery('#imagePreview').fadeIn(650);
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        jQuery("#imageUpload").change(function () {
+            readURL(this);
+        });</script>
+
+</body>
+
+</html>
